@@ -19,14 +19,6 @@
 				<!-- A un punto inferior de la página actual-->
 				<li><a href="AP8-ejercicio5">Ejercicio 5 (multimedia)</a></li>
 			</ul>
-
-			<ol>
-				<li>Archivos</li>
-				<li>Rutas</li>
-				<li>Historia</li>
-				<li>Quienes somos</li>
-				<li>Contacto</li>
-			</ol>
 		</nav>
 	</header>
 
