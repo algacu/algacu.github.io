@@ -1,0 +1,314 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Heebo', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+
+body {
+	background-color: black;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+
+/*Menú de navegación*/
+
+nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 30px 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav .logo{
+	font-family: 'Heebo', sans-serif;
+	font-weight: 400;
+	font-size: 2.2em;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+nav ul li {
+	list-style: none;
+	margin-left: 20px;
+}
+
+nav ul li a{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 1.2em;
+	text-decoration: none;
+	padding: 6px 15px;
+}
+
+nav ul li a:hover{
+	background: white;
+	opacity: 70%;
+	color: black;
+}
+
+div.subtitulo{
+	display: flex;
+	margin-top: 77px;
+	margin-left: 84px;
+	font-size: 20px;
+	font-weight: 300;
+	font-style: italic;
+}
+
+
+/*pie*/
+
+footer {
+	width: 100%;
+	display: flex;
+	font-size: 10px;
+	font-weight: 300;
+	margin-top: 90px;
+	padding-left: 82%;
+	margin-bottom: 15px;
+}
+
+footer a {
+	margin-top: 2px;
+	margin-left: 4px;
+}
+
+footer.piemain {
+	margin-top: 775px;
+}
+
+
+/*página principal / index / main*/
+
+.main { 
+  background: url(images/photo_index7.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*info*/
+
+
+a.instagram {
+	margin-right: 10px;
+}
+
+img.play {
+	margin-bottom: 4px;
+	margin-right: 10px;
+}
+
+img.cloud {
+	margin-bottom: 1px;
+}
+
+
+/*Photos (galería de fotos)*/
+
+.fila {
+	display: flex;
+	padding: 5px;
+	flex-wrap: wrap;
+	margin-top: 100px;
+	margin-bottom: 165px;
+}
+
+.columna {
+	flex: 25%;
+	padding: 5px;
+}
+
+.columna img {
+	margin-top: 5px;
+}
+
+@media (max-width: 1200px){
+	.columna{
+		flex: 50%;
+	}
+}
+
+@media (max-width: 600px){
+	.columna{
+		flex: 100%;
+	}
+	.foto{
+		width: 250px;
+		height: 375px;
+	}
+}
+
+.zoom {
+	transition: transform 0.25s;
+	width: 100%;
+}
+
+.zoom:hover {
+	transform: scale(1.75);
+}
+
+
+/*Contacto-Formulario*/
+
+body.contact { 
+  background: url(images/photo_contact2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+section.section_contacto {
+	width: 80%;
+	margin-left:12%;
+	margin-top: 80px;
+}
+
+.columna_formulario {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+.columna_aside {
+	display: inline-block;
+	vertical-align: top;
+	width: 40%;
+	margin-top: 80px;
+	margin-left: 50px;
+	margin-bottom: 20px;
+}
+
+form {
+	margin-top: 30px;
+	margin-bottom: 115px;
+}
+
+form > h1 {
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+
+label{
+	font-size: 18px;
+}
+
+input {
+	width: 75%;
+	height: 30px;
+	color: black;
+	font-size: 11pt;
+	opacity: 70%;
+}
+
+textarea{
+	width: 75%;
+	height: 150px;
+	color: black;
+	font-size: 11pt;
+	opacity: 70%;
+}
+
+#boton {
+	width: 15%;
+	padding: 5px;
+	margin-top: 25px;
+	margin-right: 154px;
+	float: right;
+}
+
+input:hover{
+	background-color: gray;
+}
+
+textarea:hover{
+	background-color: gray;
+}
+
+aside > p {
+	font-weight: 300;
+	font-size: 20px;
+}
+
+p.autor{
+	font-size: 16px;
+}
+
+
+/*Info. Artículo - Div Flex Container*/
+
+.contenedor_flex {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+  margin-left: 83px;
+  margin-top: 100px;
+}
+
+.flex_item:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  padding-right: 6em;
+  width: 50%;
+}
+
+.flex_item:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  margin-right: 12px;
+}
+
+.flex_item:nth-child(3) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.leyenda{
+	font-weight: 300;
+	font-size: 13px;
+}
+
+.ciudad{
+	font-weight: 300;
+	font-size: 11px;
+	font-style: italic;
+}
