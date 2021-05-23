@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<!-- Head con el uso de etiqutas meta (descripción, palabras clave, autor y 
-	viewport, para layout multidispositivo), enlaces a fuentes de Google para su uso en la web, 
-	uso de normalize.css y el script modernizr-custom.js, relación a la hoja de estilos, favicon
-	y título. -->
-<!-- Esta página contiene dos script adicionales, jquery.js y lity.js, que aportan una 
-	funcionalidad "lightbox" para el visionado de elementos multimedia en pantalla. -->
+<!-- Head con el uso de etiqutas meta (descripción, palabras clave, autor y viewport, para layout multidispositivo), enlaces a fuentes de Google para su uso en la web, uso de normalize.css y el script modernizr-custom.js, relación a la hoja de estilos, favicon y título. -->
+<!-- Esta página contiene dos script adicionales, jquery.js y lity.js, que aportan una funcionalidad "lightbox" para el visionado de elementos multimedia en pantalla. -->
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +18,7 @@
 	<link rel="stylesheet" href="dist/lity.css">
 	<script src="vendor/jquery.js"></script>
 	<script src="dist/lity.js"></script>
-	<title>Info | OUTERHOUND - Street Photography</title>
+	<title>Información | OUTERHOUND - Street Photography</title>
 </head>
 
 <body>
@@ -33,7 +29,7 @@
 			<a href="index.html" class="logo">OUTERHOUND</a>
 			<ul>
 				<li><a href="index.html">Inicio</a></li>
-				<li><a href="info.html">Información</a></li>
+				<li><a href="info.html" class="active">Información</a></li>
 				<li><a href="photos.html">Fotografías</a></li>
 				<li><a href="contact.html">Contacto</a></li>
 			</ul>
@@ -51,28 +47,28 @@
 		<!-- Article de tipo flex, que ordena sus elementos hijos en fila, funcionando éstos como bloques -->
 		<article class="contenedor_flex">
 
-	   		<div class="flex_item">
+	   		<div class="objeto_flex">
 	   			<h1>Alejandro García</h1>
 				<br/>
 				<h2>Sobre mí</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dolor sapien, volutpat at velit et, aliquam luctus risus. Vestibulum sed ligula sapien. Nullam ornare tempor dictum. Nam enim elit, semper eget risus in, iaculis finibus dolor. In eget mauris laoreet, vehicula neque quis, fermentum ante. Ut sagittis sodales euismod. Integer interdum tellus sed quam condimentum, sit amet interdum nulla laoreet. Integer eu tincidunt quam. Pellentesque dignissim tortor lacinia vestibulum condimentum. In vitae lorem non ligula pulvinar congue vitae non magna. Phasellus ullamcorper et massa ac tempor. Nulla eget lectus vel quam volutpat luctus. Ut vulputate risus id urna condimentum feugiat.</p>
+				<p class="textoinfo">Graduado en <b>Comunicación Audiovisual</b> por la Universidad de Valencia. Actualmente estudio el Ciclo Formativo de Grado Superior de <b>Desarrollo de Aplicaciones Multiplataforma en Florida Universitaria</b>, donde busco ampliar y mejorar mis conocimientos en el desarrollo de programas y páginas web. Las competencias adquiridas hasta el momento me han permitido crear este <em>portfolio online</em>  de mi trabajo como fotógrafo callejero.</p>
 				<br/>
 				<h2>Miradas callejeras</h2>
-				<p>Nunc congue vel est id cursus. Sed turpis ipsum, eleifend sit amet consequat ac, convallis vitae mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam eros ex, tristique ac porttitor vitae, dignissim consectetur dolor. Nunc volutpat at ipsum vitae sagittis. Curabitur nec lacinia massa. Vivamus feugiat mollis turpis, id viverra diam egestas lobortis. Proin sollicitudin aliquet sapien, ut convallis lacus feugiat sit amet. Aliquam erat volutpat. Praesent dictum dolor sed egestas vestibulum. In ut quam nec tellus rhoncus auctor. Aenean vel tristique nunc.</p>
+				<p class="textoinfo">Cómo vemos el mundo es causa y consecuencia de cómo somos. Nuestra mirada presente moldea la realidad en base a experiencias pasadas y expectativas futuras. Es por ello que no hay dos miradas iguales. La fotografía nos ayuda a capturar instantes únicos, creando imágenes que sólo tienen sentido a ojos de experiencias y expectativas concretas. El acto fotográfico se convierte así en un ejercicio de reflexión sobre el pasado, desde un momento presente, con la mirada puesta en el futuro.</p>
 				<br/>
 
 				<a class="instagram" target="_blank" href="https://www.instagram.com/outerhound/"><img src="images/logo_instagram.png" alt="Logo de Instagram" title="Instagram" width="40px" height="40px"></a>
 			
-	  			<a href="https://vimeo.com/320933511" data-lity><img class="play" src="images/play.svg" color="white" width="40px" height="30px" alt="Imagen que representa el botón para reproducir un vídeo" title="Play"></a>
+	  			<a href="https://youtu.be/fRfdyJNaeWI" data-lity><img class="play" src="images/play.svg" color="white" width="40px" height="30px" alt="Imagen que representa el botón para reproducir un vídeo" title="Play"></a>
 
-	  			<a href="#" target="_blank"><img class="cloud" src="images/cloud.svg" width="35px" height="35px" alt="Icono de descarga" title="Descarga mi CV"></a>
+	  			<a href=# target="_blank"><img class="cloud" src="images/cloud.svg" width="35px" height="35px" alt="Icono de descarga" title="Descarga mi CV"></a>
 	   		</div>
 
-	   		<div class="flex_item">
+	   		<div class="objeto_flex">
 	   			<img class="foto" src="images/photo_info.jpg" alt="Fotografía de un hombre caminando delante de una tienda de moda" title="Miradas y movimiento. Valencia, 2017" width="450" height="575">
 			</div>
 
-			<div class="flex_item">
+			<div class="objeto_flex">
 				<p class="leyenda">Miradas y movimiento.</p>
 				<p class="ciudad">Valencia, 2017</p>
 	   		</div>
@@ -83,7 +79,7 @@
 
 	<footer>
 		<p>© Alejandro García - 2021 | Instagram</p>
-		<a target="_blank" href="https://www.instagram.com/outerhound/"><img src="images/logo_instagram.png" alt="Logo de Instagram" style="width:10px;height:10px;"></a>
+		<a target="_blank" href="https://www.instagram.com/outerhound/"><img src="images/logo_instagram.png" alt="Logo de Instagram" style="width: 9px;height:9px;"></a>
 	</footer>
 
 </body>
